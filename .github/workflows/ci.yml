@@ -28,7 +28,7 @@ jobs:
       run: |
        owner_lower=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
        docker tag myapp:latest ghcr.io/${owner_lower}/lab5:latest
-       docker push ghcr.io/${owner_lower}/la5b:latest
+       docker push ghcr.io/${owner_lower}/lab5:latest
 
   test:
     needs: build
